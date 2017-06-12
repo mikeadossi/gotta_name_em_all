@@ -1,4 +1,4 @@
-### gotta name em all
+# gotta name em all
 
 A simple Pokemon-themed quiz game.
 
