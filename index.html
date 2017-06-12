@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>gotta name em all!</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="shortcut icon" type="image/png" href="images/aPokeball.png"/>
+	</head>
+	<body>
+		<div id="welcomeScreen" class="container">
+		  <img id="logo" src="Images/PkmnLogo.png"></img>
+		  <div><button id="startBtn">start</button></div>
+		  <div><button id="quickStartBtn">quick start</button></div>
+		</div>
+		<div id="professorOakContainer" class="container">
+			<div id="boxContainer">
+			<img id="speechBubble" src="Images/aspeechBubble.png">
+			 <div id="profsGameInstructions">
+			 </div>
+			</div>
+			<img id="professorOak" src="Images/aProfessorOak.png">
+			<br/>
+		</div>
+
+	    <div id="indexContainer" class="container">
+		    <div id="subtitle">gotta name em all!</div>
+		      <p>WELCOME! To the ultimate test of your pokemon acumen. You'll be quizzed on the names of all 151 1st generation Pokemon. Answer quickly as time is not on your side. Every wrong guess will result in a direct loss of 1 point and if the timer runs out on your turn you will lose an additional point! Answer all the pokemon queries correctly and you'll see your score at the end of the game! Be the greatest of them all! Good luck pokemon trainer.</p>
+		        <br/>
+		          <p>Enter Username</p>
+		            <input type="text" id="username"></input><button id="enterBtn">enter</button>
+	    </div><!-- indexContainer div end-->
+
+
+				<div id="gameContainer" class="container">
+				   <div id="title">Name this pokemon!</div>
+				   <div>Time remaining: <span id="result"></span></div>
+					    <div id="pokemonImageContainer" class="container">
+					      <img id="pokemonImage" src="Images/aPokeball.gif"></img>
+					    </div>
+					      <!-- <br/>-->
+					      <div id="scoreBox">
+					  	     <div id="correctAnswersTally">Correct: <span id="correctAnswersDiv" class="points"></span></div>
+					  	     <div id="incorrectAnswersTally">Incorrect: <span id="wrongAnswersDiv" class="points"></span></div>
+					      </div>
+					      <!-- <br/> -->
+				           <div id="choicesContainer">
+				           	   <div id="choices">
+				           	    <div>
+					              <span id="lineA">a.)</span><span><button id="optionA" class="option">a</button></span>
+					                 <br/>
+					                  <span id="lineB">b.)</span><span><button id="optionB" class="option">b</button></span>
+					                     <br/>
+					                       <span id="lineC">c.)</span><span><button id="optionC" class="option">c</button></span>
+					                          <br/>
+					                            <span id="lineD">d.)</span><span><button id="optionD" class="option">d</button></span>
+					                              <br/>
+					           </div>
+					           <div id="score"></div>
+					           </div><!--  choices end-->
+						           </div> <!-- choicesContainer end-->
+						             <div id="buttonContainer">
+				           	           <button id="quitBtn" class="buttons">Quit</button>
+				           	           <button id="skipBtn" class="buttons">Skip</button>
+				           	          </div>
+				</div><!-- gameContainer div end-->
+
+
+			    <div id="finalScoreContainer">
+			    	<h2 id="gameoverHeading">GAME OVER!!!</h2>
+			    	<div><div id="usernameHere"></div> YOU WON: <div id="finalPoints"></div> POINTS!!!
+			    	<button id="playAgainBtn">Play Again</button>
+			    	<img id="firstGenPokemon" src="Images/1stGen.jpg">
+			    </div>
+
+	  <script src="node_modules/store/store.min.js"></script>
+		<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous"
+		></script>
+	  <script src="main.js" type="text/javascript">countDown(10,"status")</script>
+	</body>
+</html>

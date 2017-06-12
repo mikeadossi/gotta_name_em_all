@@ -1,0 +1,292 @@
+body{
+	background: url(Images/backgroundRepeat.png) repeat top right;
+	text-align:center;
+	background-color:white;
+	font-family: "Arial Rounded MT", Arial, Helvetica, sans-serif;  
+}
+
+.container{
+	width:100%;
+}
+
+#indexBody{
+	background: url(Images/backgroundRepeat.png) no-repeat top right;
+	color:white;
+}
+
+p{
+	margin-left: 20%; 
+	margin-right: 20%;
+	color:white;
+}
+
+h1{
+	color:skyblue; 
+}
+
+#subtitle{
+	font-size:1.2em;
+	font-weight:bold;
+	color:white;
+	margin-left:1em;
+	/*width:70%;*/
+}
+
+#logo{
+	height:20%;
+	width:60%;
+	margin-top:1em;
+}
+
+.spannedDivs{
+	display:flex; /* flexbox 
+	justify-content:center */
+}
+
+#slide2{
+	background-color:indianred;
+}
+
+#gameSlide{
+	background-color:transparent;
+}
+
+#gameContainer{
+	font-size:1.5em;
+	width:100%;
+	background-size:cover;
+}
+
+#result{
+	color:red;
+	font-size:1em;
+}
+#pokemonImageContainer{
+	background: url(Images/pokemonForest.png) no-repeat top right;
+	width:70%;
+	height:50%;
+	margin-left:17%;
+}
+
+#pokemonImage{
+	height:12em;
+	width:14em;
+}
+
+.option{
+	color:orange;
+	background-color:transparent;
+	border:none;
+	font-size:1em;
+	cursor:pointer;
+	outline:0;
+}
+
+#buttonContainer{
+	display:flex;
+	justify-content:center;
+	margin-left:4%;
+	margin-top:6px;
+}
+
+#quitBtn{
+	cursor:pointer;
+	width:30%;
+	height:3em;
+	margin-right:1em;
+	border-right:none;
+	border-left: none;
+	border-top:none;
+}
+
+#skipBtn{
+	cursor:pointer;
+	width:30%;
+	height:3em;
+	border-right: none;
+	border-top:none;
+}
+
+#playAgainBtn{
+	cursor:pointer;
+	width:30%;
+	height:3em;
+	display:block;
+	margin-top:4%;
+	margin-left:35%;
+}
+
+#startBtn{
+	width:14%;
+	height:3em;
+	margin-top:13em;
+	margin-left:3.3em;
+	cursor:pointer;
+}
+
+#quickStartBtn{
+	width:14%;
+	height:3em;
+	margin-top:;
+	margin-left:3.3em;
+	cursor:pointer;
+}
+
+#title{
+	color:white;
+	font-size:1.2em;
+}
+
+#choicesContainer{
+	display:flex; /* flexbox */
+	justify-content:center 
+}
+
+#choices{
+	/*min-width:11em;*/
+	width:60%;
+	margin-left:4%;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px;
+    padding:5%;
+    background:rgba(255,255,255, 0.8); /* opacity = 0.8*/
+    display:flex;
+    justify-content:center;
+}
+
+#scoreBox{
+	display:flex;
+	justify-content:center;
+	background:rgba(255,255,255, 0.4);
+	width:50%;
+	margin-left:26%;
+	margin-top:4px;
+	margin-bottom: 4px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; /* future proofing */
+    -khtml-border-radius: 10px;
+    border:3px solid lightgrey;
+}
+
+#correctAnswersTally{
+	margin-right:2em;
+}
+
+.myGrade{
+	height:2em;
+	width:2em;
+}
+
+.points{
+	color:red;
+	background-color:transparent;
+	font-size:1em;
+}
+#gameContainer{
+	display:none;
+}
+#finalScoreContainer{
+	display:none;
+	background-color:white;
+	color:gray;
+	color:black;
+}
+
+#welcomeScreen{
+	background: url('Images/apokemonAdventure.jpg') no-repeat top right;
+	height:952px;
+	background-repeat: no-repeat;
+	background-position:center center;
+}
+
+#professorOakContainer{
+	background: url('Images/aOaksLab.jpg') no-repeat top right;
+	height:600px;
+	background-repeat: no-repeat;
+	background-position:center center;
+	color:black;
+	display:none;
+}
+
+#professorOak{
+	margin-right:20em;
+	margin-top:-12.4em;
+}
+
+#profsGameInstructions {
+    /*position: relative;*/
+    position:relative;
+    display: inline-block;
+    top:-8em;
+    width:20em;
+    margin-left:24em;
+}
+#speechBubble{
+	position:relative;
+	display:inline-block;
+	/*float:right;*/
+	margin-left:23em;
+	margin-top:5em;
+}
+input:focus{
+	outline:none;
+}
+#yourNameHere{
+	border-top:0px solid;
+	border-left:0px solid;
+	border-right:0px solid;
+	margin-right:1em;
+	font-size:large;
+}
+#sayName{
+	cursor:pointer;
+}
+#continueInstructionsBtn{
+	background-color:transparent;
+	height:0;
+	width:0;
+	border-top: 20px solid indianred;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    float:right;
+    cursor:pointer;
+}
+#text-box {
+    /*position: absolute;*/    
+    height: 100%;
+    text-align: center;    
+    width: 100%;
+}
+#text-box:before {
+   content: '';
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+}
+#instructions{
+   display: inline-block;
+   font-size: 20px; /*or whatever you want*/
+   color: red;   
+}
+#iWillHelp{
+	cursor:pointer;
+	margin-left:1em;
+}
+#beginGameBtn{
+	cursor:pointer;
+}
+
+#indexContainer{
+	display:none;
+}
+
+#firstGenPokemon{
+	width:100%;
+}
+
+#gameoverHeading{
+	padding-top:2em;
+}
