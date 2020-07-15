@@ -9,5 +9,5 @@ A simple Pokemon-themed quiz game.
 Clone down the project and inside the projects directory, from your CLI, run the following:
 
 ```
-  $ open index.html
+  $ open home.html
 ```
