@@ -11,3 +11,7 @@ Clone down the project and inside the projects directory, from your CLI, run the
 ```
   $ open home.html
 ```
+
+## Deployed
+
+Find App running on https://gotta-name-em-all.herokuapp.com/
